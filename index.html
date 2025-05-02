@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Alex - Full Stack Developer | Portfolio</title>
+    <meta name="description" content="Full Stack Developer especializado en React, JavaScript y desarrollo web moderno. Explora mi portfolio para ver proyectos de desarrollo web front-end y back-end.">
+    <meta name="keywords" content="full stack developer, react developer, javascript, web development, frontend, backend, portfolio">
+    <meta name="author" content="Alex">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alex - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Desarrollador Full Stack especializado en crear aplicaciones web modernas y responsivas usando React, JavaScript y más.">
+    <meta property="og:image" content="assets/img/About-img.jpg">
+    <meta property="og:url" content="https://alex-portfolio.netlify.app">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alex - Full Stack Developer Portfolio">
+    <meta name="twitter:description" content="Desarrollador Full Stack especializado en crear aplicaciones web modernas y responsivas.">
+    <meta name="twitter:image" content="assets/img/About-img.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <!-- Boxicons -->
+    <!-- Precargar recursos críticos -->
+    <link rel="preload" href="./style.css" as="style">
+    <link rel="preload" href="./index.js" as="script">
+    <link rel="preload" href="https://unpkg.com/scrollreveal" as="script">
+    
+    <!-- Preconectar a dominios externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    
+    <!-- Estilos críticos inline para mejorar FCP -->
+    <style>
+        .loader{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;display:flex;justify-content:center;align-items:center;z-index:9999}
+        .loader-inner{width:40px;height:40px;border:4px solid #6a6a6a;border-top:4px solid #3d99f6;border-radius:50%;animation:spin 1s linear infinite}
+        @keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+    </style>
+    
+    <!-- Cargar estilos no críticos de forma asíncrona -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Fallback para navegadores sin soporte de onload -->
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </noscript>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" role="progressbar" aria-label="Cargando sitio...">
+        <div class="loader-inner"></div>
+    </div>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="Volver arriba">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <!-- Theme toggle button -->
+    <button class="theme-toggle" aria-label="Cambiar tema">
+        <i class='bx bx-sun'></i>
+    </button>
+    <!--Header-->
+    <header role="banner">
+        <a href="#" class="logo" aria-label="Inicio">Port<span>folio</span></a>
+
+        <button class="bx bx-menu" id="menu-icon" aria-label="Abrir menú de navegación" aria-expanded="false"></button>
+
+            <nav role="navigation" aria-label="Menú principal">
+                <ul class="nav-list">
+                <li><a href="#"><i class='bx bx-home-alt-2'></i><span>Home</span></a></li>
+                <li><a href="#about"><i class='bx bxs-user-detail'></i><span>About</span></a></li>
+                <li><a href="#services"><i class='bx bx-code'></i><span>Services</span></a></li>
+                <li><a href="#skills"><i class='bx bx-dumbbell'></i><span>Skills</span></a></li>            
+                <li><a href="#portfolio"><i class='bx bx-briefcase'></i><span>Portfolio</span></a></li>
+                <li><a href="#contact"><i class='bx bx-message-rounded-dots'></i><span>Contact</span></a></li>
+                </ul>
+            </nav>
+
+    </header>
+    <!--Home section-->
+    <main>
+    <section class="home" id="home" aria-label="Inicio">
+        <div class="home-text">
+            <h1>I'm Alex<br> <span>Full Stack Developer</span></h1>
+            <p>Transforming ideas into powerful digital solutions</p>
+            <div class="home-buttons">
+                <a href="#about" class="btn">About Me <i class='bx bx-user'></i></a>
+                <a href="#portfolio" class="btn btn-outline">My Work <i class='bx bx-code-alt'></i></a>
+            </div>
+        </div>
+    </section>
+    <!--About section-->
+    <section class="about" id="about" aria-label="Sobre mí">
+        <div class="about-content">
+            <div class="about-img">
+                <img src="assets/img/About-img.webp" alt="Foto de perfil de Alex, desarrollador Full Stack">
+            </div>
+            <div class="about-text">
+                <div class="section-header">
+                    <h2>About me</h2>
+                    <h5>Full Stack <span>Developer</span> & <span>Mechanical Engineer</span></h5>
+                </div>
+                <div class="about-description">
+                    <p>Hey! My name is Alex, and I'm a passionate full stack developer and mechanical engineer from Venezuela. My journey in technology started in my childhood, but it was during my university years when programming truly captured my heart, leading me to immerse myself in computer science.</p>
+                    <ul class="about-features">
+                        <li><i class='bx bx-check-circle'></i>Full Stack Web Development</li>
+                        <li><i class='bx bx-check-circle'></i>Modern UI/UX Design</li>
+                        <li><i class='bx bx-check-circle'></i>Database Architecture</li>
+                        <li><i class='bx bx-check-circle'></i>API Development</li>
+                    </ul>
+                </div>
+                <div class="about-cta">
+                    <a href="assets/CV FULL STACK DEV ENGLISH.pdf" target="_blank" download class="btn btn-primary">
+                        <i class='bx bxs-download'></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class='bx bx-envelope'></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Services section-->
+    <section class="services" id="services" aria-label="Servicios">
+        <div class="heading">
+            <h2>Services</h2>
+            <p>Specialized solutions for your digital needs</p>
+        </div>
+
+        <div class="services-content">
+            <article class="service-card" tabindex="0">
+                <div class="service-icon">
+                    <i class='bx bx-code-alt'></i>
+                </div>
+                <h3>Front-end Development</h3>
+                <p>Creating responsive and intuitive user interfaces with modern frameworks like React and Vue.js</p>
+                <ul class="service-features">
+                    <li><i class='bx bx-check'></i>Responsive Design</li>
+                    <li><i class='bx bx-check'></i>Modern UI/UX</li>
+                    <li><i class='bx bx-check'></i>Performance Optimization</li>
+                </ul>
+            </article>
+
+            <article class="service-card" tabindex="0">
+                <div class="service-icon">
+                    <i class='bx bx-server'></i>
+                </div>
+                <h3>Back-end Development</h3>
+                <p>Building robust and scalable server-side solutions with Node.js and modern architectures</p>
+                <ul class="service-features">
+                    <li><i class='bx bx-check'></i>API Development</li>
+                    <li><i class='bx bx-check'></i>Server Architecture</li>
+                    <li><i class='bx bx-check'></i>Security Implementation</li>
+                </ul>
+            </article>
+
+            <article class="service-card" tabindex="0">
+                <div class="service-icon">
+                    <i class='bx bx-data'></i>
+                </div>
+                <h3>Database Management</h3>
+                <p>Designing and optimizing database solutions for efficient data management</p>
+                <ul class="service-features">
+                    <li><i class='bx bx-check'></i>Database Design</li>
+                    <li><i class='bx bx-check'></i>Performance Tuning</li>
+                    <li><i class='bx bx-check'></i>Data Security</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!--Skills section-->
+    <section class="skills" id="skills" aria-label="Habilidades">
+        <div class="heading">
+            <h2>Skills</h2>
+            <p>My skills that I have developed throughout my preparation, curiosity and passion for programming</p>
+        </div>
+        <div class="skills-content">
+            
+            <div class="box">
+                <i class='bx bxl-javascript'></i>
+                <h2>Javascript</h2>
+            </div>
+            <div class="box">
+                <i class='bx bxl-typescript' ></i>
+                <h2>Typescript</h2>
+            </div>
+            <div class="box">
+                <i class='bx bxl-tailwind-css' ></i>
+                <h2>Tailwind CSS</h2>
+            </div>
+            <div class="box">
+                <i class='bx bxl-react'></i>
+                <h2>React js</h2>
+            </div>            
+            <div class="box">
+                <i class='bx bxl-nodejs'></i>
+                <h2>Node js</h2>
+            </div>            
+            <div class="box">
+                <i class='bx bxl-mongodb' ></i>
+                <h2>MongoDB</h2>
+            </div>
+            <div class="box">
+                <i class='bx bxl-postgresql'></i>
+                <h2>PostgreSQL</h2>
+            </div>
+            <div class="box">
+                <i class='bx bxl-firebase'></i>
+                <h2>Firebase</h2>
+            </div>
+           
+        </div>     
+    </section>
+    <!--Portfolio-->
+    <section class="portfolio" id="portfolio" aria-label="Portafolio">
+        <div class="heading">
+            <h2>Portfolio</h2>
+            <p>Here is a sample of my work that I have carried out with dedication and care.</p>
+        </div>
+        <div class="skills-content">
+            
+            <a href="https://rick-and-morty-wikiapp.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <div class="box">
+            <img src="assets/img/portfolio/rick-morty.jpg" alt="Rick and Morty Wiki App - Una aplicación web para explorar personajes de Rick y Morty" loading="lazy">
+            <h2>Rick-and-morty-wikiapp</h2>
+            <p>Wiki about characters</p>
+            </div>
+            </a>
+
+            <a href="https://dates-app-veterinary.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <div class="box">
+            <img src="assets/img/portfolio/vet-app.jpg" alt="Aplicación de citas veterinarias - Sistema de gestión de pacientes veterinarios" loading="lazy">
+            <h2>Veterinary appointments app</h2>
+            <p>Register and<br> manage patients</p>
+             </div>
+            </a>
+        
+            
+            <a href="https://weather-app-react-location.netlify.app/" target="_blank" rel="noopener noreferrer"> 
+            <div class="box">
+            <img src="assets/img/portfolio/weather-app.jpg" alt="Aplicación del clima - Muestra datos meteorológicos basados en tu ubicación" loading="lazy">
+            <h2>Weather-app</h2>
+            <p>Weather data <br> in your location</p>
+            </div>
+            </a>
+           
+        </div>     
+    </section>
+
+    <!--Contact section-->
+    <section class="contact" id="contact" aria-label="Contacto">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="section-header">
+                    <h2>Let's Connect</h2>
+                    <p>Ready to start a project or just want to chat? Feel free to reach out!</p>
+                </div>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <div class="method-details">
+                            <h3>Email</h3>
+                            <p>alejandro117925@gmail.com</p>
+                            <a href="mailto:alejandro117925@gmail.com" class="btn btn-sm">Send Email <i class='bx bx-right-arrow-alt'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class='bx bx-map'></i>
+                        </div>
+                        <div class="method-details">
+                            <h3>Location</h3>
+                            <p>Venezuela</p>
+                            <span class="availability">Available for Remote Work</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/Alex7vzla" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+                            <i class='bx bxl-github'></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alejandro-aguilar-76a319146/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+                            <i class='bx bxl-linkedin-square'></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form class="contact-form" id="contact-form" action="#" method="POST">
+                    <div class="form-header">
+                        <h3>Send Me a Message</h3>
+                        <p>I'll get back to you as soon as possible</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit">
+                        Send Message <i class='bx bx-send'></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+       </div>
+
+    </section>
+    <!--Footer copyright-->
+    </main>
+    <footer class="copyright" role="contentinfo">
+    <footer>
+        <div class="footer-content">
+            <p>© 2022 All rights reserved | Full Stack development by Alex</p>
+        </div>
+    </footer>
+    </footer>
+    <!--Scripts-->
+    <!-- Cargar scripts de forma optimizada -->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="./index.js" defer></script>
+</body>
+</html>

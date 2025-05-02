@@ -1,0 +1,7 @@
+Por favor, reemplaza los siguientes archivos con capturas de pantalla reales de tus proyectos:
+
+1. rick-morty.jpg - Captura de pantalla de tu aplicación Rick and Morty Wiki
+2. vet-app.jpg - Captura de pantalla de tu aplicación de citas veterinarias
+3. weather-app.jpg - Captura de pantalla de tu aplicación del clima
+
+Las imágenes deberían tener un tamaño recomendado de 800x600 píxeles y estar optimizadas para web (formato JPG con compresión moderada para mantener un buen balance entre calidad y tamaño de archivo).
